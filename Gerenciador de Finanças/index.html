@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Finanças</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gerenciador de Finanças</h1>
+
+    <div class="input-area">
+      <input type="text" id="descricao" placeholder="Descrição">
+      <input type="number" id="valor" placeholder="Valor (R$)">
+      <select id="tipo">
+        <option value="entrada">Entrada</option>
+        <option value="saida">Saída</option>
+      </select>
+      <select id="categoria">
+        <option value="Alimentação">Alimentação</option>
+        <option value="Transporte">Transporte</option>
+        <option value="Lazer">Lazer</option>
+        <option value="Outros">Outros</option>
+      </select>
+      <button id="addBtn">Adicionar</button>
+    </div>
+
+    <div class="resumo">
+      <p><strong>Entradas:</strong> R$ <span id="entradas">0.00</span></p>
+      <p><strong>Saídas:</strong> R$ <span id="saidas">0.00</span></p>
+      <p><strong>Saldo:</strong> R$ <span id="saldo">0.00</span></p>
+    </div>
+
+    <h2>📋 Transações</h2>
+    <ul id="listaTransacoes"></ul>
+
+    <button id="modoBtn">Modo Escuro</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
