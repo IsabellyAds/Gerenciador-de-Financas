@@ -71,8 +71,8 @@ addBtn.addEventListener("click", () => {
 modoBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
   modoBtn.textContent = document.body.classList.contains("dark") 
-    ? "☀️ Modo Claro" 
-    : "🌙 Modo Escuro";
+    ? "Modo Claro" 
+    : "Modo Escuro";
 });
 
 
